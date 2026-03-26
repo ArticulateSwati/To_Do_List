@@ -1,0 +1,114 @@
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg: #f3f4f6;
+    --text: #1f2937;
+    --danger: #ef4444;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    
+
+}
+
+.container {
+    background: pink;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-image:url(https://media.istockphoto.com/id/1296557603/vector/abstract-paper-hexagon-white-background-light-and-shadow-vector.jpg?s=612x612&w=0&k=20&c=nvmaczWL1BQ8hdIa4FKHwk25Qxqdx6jF8X46G5GUcVs=);
+    align-items:center;
+    justify-content: center;
+    backdrop-filter: blur(100vh);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.input-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+button#add-btn {
+    background: var(--primary);
+    color: rgb(252, 253, 253);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button#add-btn:hover {
+    background: var(--primary-hover);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f3f4f6;
+    transition: background 0.2s;
+}
+
+li:hover {
+    background: #f9fafb;
+}
+
+.todo-text {
+    flex: 1;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.del-btn {
+    background: transparent;
+    color: #9ca3af;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.del-btn:hover {
+    background: #fee2e2;
+    color: var(--danger);
+}
